@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.WeatherFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground">
+
+        <TextView
+            android:id="@+id/tvTemperature"
+            android:layout_width="256dp"
+            android:layout_height="131dp"
+            android:gravity="center"
+            android:text="25c"
+            android:textColor="@color/colorText"
+            android:textSize="80sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <TextView
+            android:id="@+id/tvMain"
+            android:layout_width="135dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="Clear"
+            android:textColor="@color/colorText"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tvTemperature"
+            app:layout_constraintHorizontal_bias="0.553"
+            app:layout_constraintStart_toStartOf="@+id/tvTemperature"
+            app:layout_constraintTop_toBottomOf="@+id/tvTemperature"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:backgroundTint="@color/colorBackground"
+            android:foregroundTint="@color/colorBackground"
+            app:cardBackgroundColor="@color/colorBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvMain"
+            app:layout_constraintVertical_bias="0.868">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvRealfeelText"
+                    android:layout_width="138dp"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:text="Real Feel"
+                    android:textColor="@color/colorText"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.06"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.065" />
+
+                <TextView
+                    android:id="@+id/tvTempmaxText"
+                    android:layout_width="138dp"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:text="Temp Max"
+                    android:textColor="@color/colorText"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.941"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.672" />
+
+                <TextView
+                    android:id="@+id/tvWindspeedtext"
+                    android:layout_width="138dp"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:text="Wind Speed"
+                    android:textColor="@color/colorText"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.941"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.065" />
+
+                <TextView
+                    android:id="@+id/tvTempMinText"
+                    android:layout_width="138dp"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:text="Temp Min"
+                    android:textColor="@color/colorText"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.058"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.672" />
+
+                <TextView
+                    android:id="@+id/tvRealfeel"
+                    android:layout_width="138dp"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textColor="@color/colorText"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tvTempMinText"
+                    app:layout_constraintEnd_toEndOf="@+id/tvRealfeelText"
+                    app:layout_constraintStart_toStartOf="@+id/tvRealfeelText"
+                    app:layout_constraintTop_toBottomOf="@+id/tvRealfeelText"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/tvTempMax"
+                    android:layout_width="138dp"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textColor="@color/colorText"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/tvTempmaxText"
+                    app:layout_constraintStart_toStartOf="@+id/tvTempmaxText"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTempmaxText"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/tvWindspeed"
+                    android:layout_width="138dp"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textColor="@color/colorText"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tvTempmaxText"
+                    app:layout_constraintEnd_toEndOf="@+id/tvWindspeedtext"
+                    app:layout_constraintStart_toStartOf="@+id/tvWindspeedtext"
+                    app:layout_constraintTop_toBottomOf="@+id/tvWindspeedtext"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/tvTempmin"
+                    android:layout_width="138dp"
+                    android:layout_height="56dp"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textColor="@color/colorText"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/tvTempMinText"
+                    app:layout_constraintStart_toStartOf="@+id/tvTempMinText"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTempMinText"
+                    app:layout_constraintVertical_bias="0.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvCityName"
+            android:layout_width="253dp"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:textColor="@color/colorText"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvTemperature"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.262" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
